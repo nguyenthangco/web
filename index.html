@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ------------Panner ---------------- -->
+        <div class="col-xl-12" style="padding: 0px; background-color: #b9cfd7; display: flex;">
+            <img style="background-color: none;" src="../IMG/LOGO.PNG" alt="">
+            <div class="slogan" style="margin-top: 20px;">
+                <h2 style="padding-left: 50px; font: bolder; text-align: center; color: #384289;">Bộ công thương</br>
+                    TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP.HỒ CHÍ MINH
+                </h2>
+                <h4 style="text-align: center; color: #f44336; font: 400; font-size: 18px;">Đổi mới, nâng tầm cao mới - Năng động, hội nhập toàn cầu</h4>
+            </div>
+        </div>
+        <!-- ---------------- menu ----------------------- -->
+        <div class="col-xs-12">
+            <nav class="navbar navbar-expand-sm">
+                <ul class="navbar nav">
+                    <li class="navbar-item"><a class="navbar-link" href="#" style="margin-right: 20px;" id="btn1">Đăng nhập</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#" id="btn2">Đăng ký </a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- --------------------- Danh sách ----------------------- -->
+        <div class="col-xs-12">
+            <h4 style="text-align: center; letter-spacing: 2px; font-weight: 400;">DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIÊN</BR> TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h4>
+            <table class="table table-striped" role="table" id="danhsach">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>SCMND cũ</th>
+                    <th>Quê quán</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Ảnh đại diện</th>
+                </tr>
+            </table>
+        </div>
+        <!-- ---------------- footer ------------------ -->
+       <footer>
+            <div class="col-xs-12">
+                <p style="text-align: center;">SVTH: Trần Nguyên Thắng Mã sinh viên: 20003015 Lớp: DHCNTT16B</p>
+            </div> 
+       </footer>
+       <!-- ---------------------- Modal --------------------- -->
+       <div class="modal fade" role="dialog" id="myModal">
+        <div class="modal-dialog" style="margin-top: 10px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-left">Thông tin cá nhân</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="" role="form" class="form-horizontal" style="margin-top: 10px;">
+                        <!-- ---------- Họ Tên ---------------- -->
+                        <label for="Name" class="control-label col-xs-3">Họ Tên</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Name" class="form-control" placeholder="Nhập họ tên">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+
+                        <!-- ---------------- SCMNDcu ---------------- -->
+                        <label for="SCMNDcu" class="control-label col-xs-3">SCMND cũ</label>
+                        <div class="col-xs-9" style="margin-bottom: 10px;">
+                            <input type="number"id="Cmnd" class="form-control" placeholder="Nhập số CMND cũ">
+                            <span class="text-danger" id="tbCmnd" style="color: red;">*</span>
+                        </div>
+
+                        <!-- ------------- quê quán ---------------- -->
+                        <label for="QQ" class="control-label col-xs-3">Quê quán</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Qq" class="form-control" placeholder="Nhập tỉnh của bạn">
+                            <span class="text-danger" id="tbQQ" style="color: red;">*</span>
+                        </div>
+                        <!-- -------------------- Email ---------------- -->
+                        <label for="Email" class="control-label col-xs-3">Emai</label>
+                        <div class="col-xs-9">
+                            <input type="email" id="Mail" class="form-control" placeholder="Nhập email của bạn">
+                            <span class="text-danger" id="tbMail" style="color: red;">*</span>
+                        </div>
+                        <!-- --------------------- Điện thoại ---------------------- -->
+                        <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                        <div class="col-xs-9">
+                            <input type="number" id="SDT" class="form-control" placeholder="xxx-xxx-xxx">
+                            <span class="text-danger" id="tbSDT" style="color: red;">*</span>
+                        </div>
+                        <!-- ----------------- Ảnh Đại Diện ---------------- -->
+                        <label for="ADD" class="control-label col-xs-3">Ảnh đại diện</label>
+                        <div class="col-xs-9">
+                            <input type="file" id="ADD" class="form-control">
+                            <span class="text-danger" id="tbADD" style="color: red;">*</span>
+                        </div>
+                        <!-- ------------------ thẻ btn LƯU ----------------- -->
+                        <button class="btn btn-sucess btn-group-justified" id="Save" type="button" style="color: white;
+                        background-color: green; width: 100%;">
+                            Lưu
+                        </button>
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+   </div>
+       
+    </div>
+
+
+    
+</body>
+
+</html>
